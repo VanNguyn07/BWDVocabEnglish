@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trò Chơi - Vocab English</title>
+  <link rel="stylesheet" href="games.css">
+  <!-- Font Awesome 6 (bản mới, hỗ trợ fa-people-group) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+  <!-- <div class="games-section"> -->
+    <div class="section-header">
+      <h2>Học Từ Vựng Qua Trò Chơi</h2>
+      <p class="section-subtitle">Chọn một trò chơi để luyện tập từ vựng một cách thú vị</p>
+    </div>
+    
+    <div class="games-container">
+      <!-- Trò chơi ghép từ -->
+      <div class="game-card card" id="wordMatchCard">
+        <div class="game-image">
+          <img src="https://bing.com/th/id/BCO.2c8f23a8-4af2-4320-8fe0-9817408a54f9.png" alt="Word Match Game">
+        </div>
+        <div class="card-body">
+          <div class="game-info">
+            <h3>Ghép Từ</h3>
+            <p>Ghép từ với nghĩa tương ứng của chúng để rèn luyện vốn từ vựng</p>
+            <div class="game-difficulty">
+              <span class="difficulty-dot"></span>
+              <span class="difficulty-dot"></span>
+              <span class="difficulty-dot"></span>
+            </div>
+          </div>
+          <button class="btn btn-primary play-btn" data-game="wordMatch">
+            <i class="fas fa-play"></i> Chơi Ngay
+          </button>
+        </div>
+      </div>
+      
+      <!-- Trò chơi sắp xếp chữ -->
+      <div class="game-card card" id="wordScrambleCard">
+        <div class="game-image">
+          <img src="https://tse4.mm.bing.net/th/id/OIP.z_BilKr6zfkunsFRrbEY8QAAAA?cb=iwp2&rs=1&pid=ImgDetMain" alt="Word Scramble Game">
+        </div>
+        <div class="card-body">
+          <div class="game-info">
+            <h3>Sắp Xếp Chữ</h3>
+            <p>Sắp xếp các chữ cái đã bị xáo trộn để tạo thành từ tiếng Anh</p>
+            <div class="game-difficulty">
+              <span class="difficulty-dot"></span>
+              <span class="difficulty-dot"></span>
+              <span class="difficulty-dot"></span>
+            </div>
+          </div>
+          <button class="btn btn-primary play-btn" data-game="wordScramble">
+            <i class="fas fa-play"></i> Chơi Ngay
+          </button>
+        </div>
+      </div>
+      
+      <!-- Trò chơi Hangman -->
+      <div class="game-card card" id="hangmanCard">
+        <div class="game-image">
+          <img src="https://tse1.mm.bing.net/th/id/OIP.AvXWDkWMKPioLbvKamiF3AHaE2?cb=iwp2&rs=1&pid=ImgDetMain" alt="Hangman Game">
+        </div>
+        <div class="card-body">
+          <div class="game-info">
+            <h3>Hangman</h3>
+            <p>Đoán từ bí ẩn trước khi hình người được vẽ hoàn chỉnh</p>
+            <div class="game-difficulty">
+              <span class="difficulty-dot"></span>
+              <span class="difficulty-dot"></span>
+              <span class="difficulty-dot"></span>
+            </div>
+          </div>
+          <button class="btn btn-primary play-btn" data-game="hangman">
+            <i class="fas fa-play"></i> Chơi Ngay
+          </button>
+        </div>
+      </div>
+      
+      <!-- Trò chơi ghép nhanh -->
+      <div class="game-card card" id="speedMatchCard">
+        <div class="game-image">
+          <img src="https://tse2.mm.bing.net/th/id/OIP.c9t60IJJrs_I2hU1E3zO5AHaHa?cb=iwp2&rs=1&pid=ImgDetMain" alt="Speed Match Game">
+        </div>
+        <div class="card-body">
+          <div class="game-info">
+            <h3>Ghép Nhanh</h3>
+            <p>Ghép từ với nghĩa đúng nhanh nhất có thể trong thời gian giới hạn</p>
+            <div class="game-difficulty">
+              <span class="difficulty-dot"></span>
+              <span class="difficulty-dot"></span>
+              <span class="difficulty-dot"></span>
+            </div>
+          </div>
+          <button class="btn btn-primary play-btn" data-game="speedMatch">
+            <i class="fas fa-play"></i> Chơi Ngay
+          </button>
+        </div>
+      </div>
+      
+      <!-- Trò chơi tìm từ -->
+      <div class="game-card card" id="wordSearchCard">
+        <div class="game-image">
+          <img src="https://tse1.mm.bing.net/th/id/OIP.7nM7wPGLNQrDWpdPp1E-aAHaJQ?cb=iwp2&rs=1&pid=ImgDetMain" alt="Word Search Game">
+        </div>
+        <div class="card-body">
+          <div class="game-info">
+            <h3>Tìm Từ</h3>
+            <p>Tìm các từ tiếng Anh giấu trong bảng chữ cái</p>
+            <div class="game-difficulty">
+              <span class="difficulty-dot"></span>
+              <span class="difficulty-dot"></span>
+              <span class="difficulty-dot"></span>
+            </div>
+          </div>
+          <button class="btn btn-primary play-btn" data-game="wordSearch">
+            <i class="fas fa-play"></i> Chơi Ngay
+          </button>
+        </div>
+      </div>
+      
+      <!-- Trò chơi trí nhớ -->
+      <div class="game-card card" id="memoryGameCard">
+        <div class="game-image">
+          <img src="https://th.bing.com/th/id/R.4778bc3ff2051402d01858ebb4b2126c?rik=mfKnaZkoTkrfjg&pid=ImgRaw&r=0" alt="Memory Game">
+        </div>
+        <div class="card-body">
+          <div class="game-info">
+            <h3>Trò Chơi Trí Nhớ</h3>
+            <p>Lật thẻ để tìm các cặp từ và nghĩa khớp nhau</p>
+            <div class="game-difficulty">
+              <span class="difficulty-dot"></span>
+              <span class="difficulty-dot"></span>
+              <span class="difficulty-dot"></span>
+            </div>
+          </div>
+          <button class="btn btn-primary play-btn" data-game="memoryGame">
+            <i class="fas fa-play"></i> Chơi Ngay
+          </button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="games-benefits">
+      <h3>Lợi ích của việc học qua trò chơi</h3>
+      <div class="benefits-container">
+        <div class="benefit-item">
+          <div class="benefit-icon">
+            <i class="fas fa-brain"></i> 
+            <!-- fas là viết tắt của Font Awesome Solid, fa-brain là một icon từ Font Awesome -->
+          </div>
+          <div class="benefit-info">
+            <h4>Tăng khả năng ghi nhớ</h4>
+            <p>Các trò chơi giúp bạn nhớ từ vựng lâu hơn thông qua tương tác và lặp lại.</p>
+          </div>
+        </div>
+        
+        <div class="benefit-item">
+          <div class="benefit-icon">
+            <i class="fas fa-grin"></i>
+          </div>
+          <div class="benefit-info">
+            <h4>Tăng hứng thú khi học</h4>
+            <p>Trò chơi làm cho việc học từ vựng trở nên vui vẻ, không nhàm chán.
+              Giúp người học duy trì động lực lâu dài hơn.</p>
+          </div>
+        </div>
+        
+        <div class="benefit-item">
+          <div class="benefit-icon">
+            <i class="fas fa-tachometer-alt"></i>
+          </div>
+          <div class="benefit-info">
+            <h4>Phản xạ nhanh hơn</h4>
+            <p>Rèn luyện khả năng nghĩ và phản ứng nhanh với từ vựng tiếng Anh.</p>
+          </div>
+        </div>
+        
+        <div class="benefit-item">
+          <div class="benefit-icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <div class="benefit-info">
+            <h4>Theo dõi tiến độ</h4>
+            <p>Dễ dàng đánh giá mức độ tiến bộ của bạn qua điểm số và thành tích.</p>
+          </div>
+        </div>
+        
+        <div class="benefit-item">
+          <div class="benefit-icon">
+            <i class="fas fa-leaf"></i>
+          </div>
+          <div class="benefit-info">
+            <h4>Giảm căng thẳng</h4>
+            <p>Trò chơi giúp giảm áp lực và căng thẳng khi học từ vựng khó.</p>
+          </div>
+        </div>
+
+        <div class="benefit-item">
+          <div class="benefit-icon">
+            <i class="fas fa-people-group"></i>
+          </div>
+          <div class="benefit-info">
+            <h4> Dễ tiếp cận, phù hợp mọi lứa tuổi</h4>
+            <p>Nhiều trò chơi thiết kế đơn giản, dễ chơi, phù hợp với mọi lứa tuổi, từ trẻ em đến người lớn.</p>
+        </div>  
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
